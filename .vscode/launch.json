@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "image_viewer",
+            "cwd": "image_viewer",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "image_viewer (profile mode)",
+            "cwd": "image_viewer",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "image_viewer (release mode)",
+            "cwd": "image_viewer",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "image_viewer_2",
+            "cwd": "image_viewer_2\\image_viewer_2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "image_viewer_2 (profile mode)",
+            "cwd": "image_viewer_2\\image_viewer_2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "image_viewer_2 (release mode)",
+            "cwd": "image_viewer_2\\image_viewer_2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

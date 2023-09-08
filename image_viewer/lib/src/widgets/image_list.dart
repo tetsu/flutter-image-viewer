@@ -25,8 +25,18 @@ class ImageList extends StatelessWidget {
       ),
       padding: const EdgeInsets.all(20.0),
       margin: const EdgeInsets.all(20.0),
-      // child: Image.network(image.url + ".png"),
-      child: SelectableText(image.url + ".png"),
+      child: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(
+              bottom: 20.0,
+            ),
+            child: Image.network(image.url),
+          ),
+          Text(image.title),
+        ],
+      ),
+      // child: SelectableText(image.url),
     );
   }
 }
