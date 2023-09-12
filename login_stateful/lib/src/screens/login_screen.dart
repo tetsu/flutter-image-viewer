@@ -5,16 +5,19 @@ class LoginScreen extends StatefulWidget {
 
   @override
   createState() {
-    return LoginScreenState();
+    return _LoginScreenState();
   }
 }
 
-class LoginScreenState extends State<LoginScreen> {
+class _LoginScreenState extends State<LoginScreen> {
+  final formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(20.0),
       child: Form(
+        key: formKey,
         child: Column(
           children: [
             emailField(),
@@ -55,7 +58,9 @@ class LoginScreenState extends State<LoginScreen> {
         foregroundColor: Colors.blue,
       ),
       child: const Text('Submit'),
-      onPressed: () {},
+      onPressed: () {
+        formKey.currentState?.reset();
+      },
     );
   }
 }
